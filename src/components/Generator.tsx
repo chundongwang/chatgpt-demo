@@ -173,7 +173,7 @@ export default () => {
     if (e.isComposing || e.shiftKey)
       return
 
-    if (e.key === 'Enter')
+    if ((e.ctrlKey || e.metaKey) && e.key === 'Enter')
       handleButtonClick()
   }
 
