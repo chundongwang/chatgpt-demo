@@ -6,13 +6,11 @@ const model = import.meta.env.OPENAI_API_MODEL || 'gpt-3.5-turbo'
 ---
 
 <header>
-  <div class="fb">
+  <div class="fl">
     <Logo />
+    <span class="gpt-title">Private</span>
+    <span class="gpt-subtitle">GPT</span>
     <Themetoggle />
-  </div>
-  <div class="fi mt-2">
-    <span class="gpt-title">ChatGPT</span>
-    <span class="gpt-subtitle">Demo</span>
   </div>
   <p mt-1 op-60>Based on OpenAI API ({model}).</p>
 </header>
